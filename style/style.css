@@ -1,0 +1,841 @@
+/*------------    text connection   -----------*/
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("fonts/Inter-Regular.otf");
+}
+
+/*------------    text connection   -----------*/
+
+
+
+/*------------    text connection and properties for everyone  -----------*/
+body{
+    padding: 0px;
+    margin: 0px auto;
+    font-family: "Inter-Regular";
+    max-width: 1920px;
+}
+/*------------    text connection and properties for everyone  -----------*/
+
+
+
+/*------------    start header   -----------*/
+
+header{
+    background: url("../img/header.jpg") no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    padding-bottom: 10px;
+}
+.nav{
+    display: flex;
+    margin-left: 130px;
+    justify-content: space-between;
+    margin-right: 130px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.menu_button{
+    display: none;
+}
+.log{
+    margin-top: 30px;
+    width: 10%;
+    height: 10%;
+    min-width: 8%;
+    min-height: 8%;
+}
+.poisk{
+    background: url("../img/lupa.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+nav{
+    float: right;
+}
+.nuv{
+    flex-wrap: wrap;
+    margin-top: 6vw;
+    gap: 3.7vw;
+    font-weight: bold;
+    font-size: 1.4vw;
+    list-style-type: none;
+    display: flex;
+    color: white;
+}
+.name, .akciy{
+    margin-right: 130px;
+    margin-left: 130px;
+}
+h1{
+    letter-spacing: 5px;
+    font-size: 6vw;
+    margin-bottom: 3vw;
+    font-weight: bold;
+    color: white;
+}
+.name p{
+    letter-spacing: 5px;
+    font-size: 2vw;
+    color: white;
+}
+.akciy{
+    color: white;
+    margin-right: 130px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.akciy input{
+    width: 30%;
+    padding: 35px 0px;
+    padding-left: 28px;
+    font-size: 1.7vw;
+    border-radius: 20px;
+    background: #FAFF00;
+}
+.input3{
+    width: 30%;
+    text-align: center;
+    padding: 35px 0px;
+    font-size: 1.7vw;
+    border-radius: 20px;
+    background: #FAFF00;
+}
+/*------------    start planshet header   -----------*/
+@media screen and (min-width:721px) and (max-width:1280px){
+    .log{
+        margin-top: 42px;
+    }
+    .poisk{
+        width: 31px;
+        height: 28px;
+    }
+    .nuv{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 7vw;
+        padding-left: 0px;
+        gap: 1.8vw;
+        font-size: 20px;
+    }
+    .nav{
+        display: flex;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    h1{
+        letter-spacing: 3px;
+        font-size: 6vw;
+        margin-top: 5vw;
+        margin-bottom: 1.5vw;
+    }
+    .name p{
+        margin: 0px;
+        letter-spacing: 3px;
+        font-size: 2vw;
+    }
+    .akciy{
+        margin-top: 2vw;
+    }
+    .akciy input{
+        width: 20%;
+        padding: 0.4vw 0px;
+        padding-left: 17px;
+        font-size: 23px;
+        border-radius: 20px;
+        background: #FAFF00;
+    }
+    .input3{
+        width: 20%;
+        padding-left: 17px;
+        text-align: center;
+        padding: 5px 0px;
+        font-size: 23px;
+        border-radius: 20px;
+        background: #FAFF00;
+    }
+ }
+ @media screen and (min-width:721px) and (max-width:1050px){
+    .input1, .input2{
+        display: none;
+    }
+    .akciy{
+        margin: 0px;
+        display:flex;
+    }
+    .input3{
+        margin: auto;
+        text-align: center;;
+        padding: 5px 0px;
+        font-size: 2vw;
+        border-radius: 15px;
+        background: #FAFF00;
+    }
+ }
+ /*------------    end planshet header   -----------*/
+
+ /*------------    start adaptation header   -----------*/
+ @media screen and (min-width:1920px){
+    .nav img{
+        margin-top: 30px;
+        width: 177px;
+    }
+    .nuv{
+        gap: 71px;
+        margin-top: 118px;
+        font-size: 26px;
+    }
+    h1{
+        letter-spacing: 5px;
+        font-size: 110px;
+        margin-bottom: 70px;
+        font-weight: bold;
+        color: white;
+    }
+    .name p{
+        letter-spacing: 5px;
+        font-size: 40px;
+        color: white;
+    }
+    .akciy{
+        color: white;
+        margin-right: 130px;
+        display: flex;
+    }
+    .akciy input{
+        padding: 35px 0px;
+        padding-left: 28px;
+        font-size: 34px;
+        border-radius: 20px;
+        background: #FAFF00;
+    }
+    .input3{
+        text-align: center;
+        padding: 35px 0px;
+        font-size: 34px;
+        border-radius: 20px;
+        background: #FAFF00;
+    }
+ }
+/*------------    end adaptation header  -----------*/
+
+/*------------    start mobile header   -----------*/
+@media screen and (max-width:720px){
+    header{
+        background: url("../img/header.jpg") no-repeat;
+        background-size: cover;
+    }
+    .log{
+        margin-top: 37px;
+    }
+    .nav{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .nav nav{
+        margin-top: 37px;
+        margin-left: 450px;
+    }
+    .menu_button{
+        display: initial;
+    }
+    .menu_button img{
+        width: 70%;
+    }
+    .poisk, .nuv{
+        display: none;
+    }
+    h1{
+        letter-spacing: 1.5px;
+        font-size: 28px;
+        margin-top: 35px;
+        margin-bottom: 8px;
+    }
+    .name{
+        text-align: center;
+    }
+    .name p{
+        margin: 0px;
+        letter-spacing: 1.5px;
+        font-size: 13px;
+    }
+    .akciy{
+        margin: 0px;
+        padding-top: 10px;
+        display:flex;
+    }
+    .input1, .input2{
+        display: none;
+    }
+    .input3{
+        margin:auto;
+        padding: 5px 0px;
+        font-size: 13px;
+        border-radius: 15px;
+        background: #FAFF00;
+    }
+}
+/*------------    end header   -----------*/
+
+
+
+/*------------    start main1   -----------*/
+
+.main1{
+    background: #FFE3BA;
+    padding-bottom: 30px;
+}
+h3{
+    margin: 0px 140px;
+    padding-top: 4.3vw;
+    color: black;
+    font-size: 64px;
+    font-weight: bold;
+}
+.yslugi{
+    margin-right: 130px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-top: 54px;
+}
+.kat{
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 0px;
+    Line-height: 38.73px;
+    margin-bottom: 5vw;
+}
+.kategoriy{
+    margin-bottom: 1vw;
+    margin-right: 0.5vw;
+}
+b{
+    color: #626262;
+    font-weight: normal;
+}
+.car{
+    width: 394px;
+    height: 266px;
+}
+.cena{
+    font-size: 1.5vw;
+    margin-top: 3.7vw;
+    color: #626262;
+    font-weight: bold;
+    text-align: center;
+}
+.zayvka{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 5% 18%;
+    border: none;
+    background: #FF9900;
+    font-weight: bold;
+}
+
+/*------------    start adaptation header   -----------*/
+@media screen and (min-width:1920px){
+    .zayvka{
+        font-size: 28px;
+        margin-left: 5px;
+        border-radius: 5px;
+        padding: 19px 76px;
+        border: none;
+        background: #FF9900;
+        font-weight: bold;
+    }
+    .kategoriy{
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .cena{
+        font-size: 30px;
+        margin-top: 66px;
+    }
+    .kat{
+        margin-bottom: 62px;
+        font-size: 32px;
+    }
+    h3{
+        margin: 0px 140px;
+        padding-top: 95px;
+        font-size: 64px;
+    }
+}
+/*------------    end adaptation header   -----------*/
+
+/*------------    start planshet main1   -----------*/
+@media screen and (max-width:1920px) and (min-width:1540px){
+    .center{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width:720px) and (max-width:1280px){
+    h3{
+        margin: 0px 10vw;
+        padding-top: 5.5vw;
+        font-size: 49px;
+    }
+    .yslugi{
+        margin: 0 10vw;
+        margin-top: 4.7vw;
+    }
+    .kat{
+        padding-bottom: 1vw;
+        margin: 0;
+        font-size: 27px;
+        Line-height: 36.73px;
+    }
+    .car{
+        width: 322px;
+        height: 188px;
+    }
+    .cena{
+        font-size: 1.7vw;
+        margin-top: 3.5vw;
+    }
+    .center{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .odna{
+        justify-content: space-between;
+    }
+    .zayvka{
+        margin: 0px 25px;
+    }
+}
+/*------------    end planshet main1   -----------*/
+
+/*------------    start mobile main1   -----------*/
+@media screen and (max-width:720px){
+    .car{
+        width: 190px;
+        height: 137px;
+    }
+    h3{
+        margin: 0px 50px;
+        padding-top: 30px;
+        font-size: 22px;
+    }
+    .yslugi{
+        margin: 0px 50px;
+        margin-top: 24px;
+    }
+    .zayvka{
+        margin: 0px 20px;
+    }
+    .kat{
+        padding-bottom: 20px;
+        margin: 0;
+        font-size: 18px;
+        Line-height: 33.73px;
+    }
+}
+/*------------    end mobile main1   -----------*/
+
+/*------------    end main1   -----------*/
+
+
+/*------------    start main2   -----------*/
+
+.main2 {
+    background: url("../img/menu2.jpg");
+    background-size: cover;
+}
+.osnova{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    margin-right:130px;
+    margin-left: 130px;
+    text-align: center;
+    padding-bottom: 70px;
+    margin-top: 54px;
+}
+.preim p{
+    font-size: 30px;
+    margin: 0px;
+}
+.top{
+    width: 289px;
+    height: 300px;
+}
+h6{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+/*------------    start planshet main2   -----------*/
+@media screen and (max-width: 1550px) and (min-width: 1210px) {
+    .center1{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1920px){
+    .otstup{
+        margin-top: 39px;
+    }
+}
+@media screen and (max-width: 1920px) and (min-width: 1175px) {
+    .otstup{
+        margin-top: 2vw;
+    }
+}
+
+@media screen and (max-width: 1175px) and (min-width: 777px) {
+    .center1{
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:720px) and (max-width:1280px){
+    .top{
+        width: 190px;
+        height: 197px;
+    }
+    .osnova{
+        margin: 0 10vw;
+        margin-top: 4.7vw;
+    }
+    .preim p{
+        font-size: 2vw;
+    }
+    h6{
+        font-size: 2.3vw;
+        margin-bottom: 2vw;
+        margin-top: 0.5vw;
+    }
+}
+/*------------    end planshet main2   -----------*/
+
+/*------------    start mobile main2   -----------*/
+@media screen and (max-width:720px) and (min-width:590px){
+    .center1{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:720px){
+    .osnova{
+        margin: 0px 50px;
+        margin-top: 24px;
+    }
+    .top{
+        width: 102px;
+        height: 102px;
+    }
+    .preim p{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 22px;
+    }
+}
+
+/*------------    end mobile main2   -----------*/
+/*------------    end main2   -----------*/
+
+/*------------    start main3   -----------*/
+
+.main3{
+    background: url("../img/menu3.jpg") no-repeat;
+    background-size: 100%;
+}
+.slider {
+    padding-top: 30px;
+    padding-left: 200px;
+    z-index: 9;
+    padding-bottom: 50px;
+    width: 1646px;
+    overflow: hidden;
+    margin: 0px;
+    position: relative;
+}
+.slider ul,
+.slider li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.slider ul {
+    width: 9999px; 
+}
+.slider ul li {
+    list-style-type: none;
+    float: left;
+    width: 1646px;
+    height: 1026px;
+}
+.slider .nav {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 940px;
+}
+.slider .nav span {
+    opacity: 0.9;
+    background: #fff;
+    margin: 0 18px 0 0;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 1px 2px #000;
+}
+.slider .nav span.on {
+    background: #C5C5C5;
+    border: 5px solid #000;
+}
+/*------------    start planshet main3   -----------*/
+@media screen and (min-width:720px) and (max-width:1280px){
+    .ga{
+        width: 50%;
+    }
+}
+/*------------    end planshet main3   -----------*/
+
+/*------------    end main3   -----------*/
+
+/*------------    start footer   -----------*/
+
+footer{
+    background: #000000;
+}
+.log_podval{
+    margin-left: 140px;
+}
+.podval{
+    justify-content: space-between;
+    margin-top: 21px;
+    margin-left: 140px;
+    padding-right: 130px;
+    gap: 50px;
+    display: flex;
+    color: white;
+    font-size: 25px;
+}
+.nav_podval{
+    font-size: 30px;
+}
+.sety ul{
+    gap: 42px;
+    display: flex;
+    padding-left: 0px;
+}
+.sety li{
+    list-style-type: none;
+}
+.soc_seti{
+    width: 80px;
+    height: 80px;
+}
+.navbar-toggler{
+    border: #626262;
+}
+.soc{
+    margin: 0 130px;
+}
+.prilosg{
+    width: 20%;
+}
+/*------------    start planshet footer   -----------*/
+@media screen and (min-width:720px) and (max-width:1280px){
+    .podval{
+        padding-right: 0px;
+        font-size: 1.7vw;
+        margin: 0px 10vw;
+        padding-top: 5.5vw;
+    }
+    .soc{
+        margin: 0px 10vw;
+    }
+    .log_podval{
+        margin: 0px 10vw;
+        padding-top: 5.5vw;
+    }
+    .nav_podval{
+        font-size: 2.3vw;
+    }
+    .kontakty{
+        display: none;
+    }
+}
+/*------------    end planshet footer   -----------*/
+
+/*------------    start mobile footer   -----------*/
+
+@media screen and (max-width:720px){
+    .podval_mobile{
+        display: none;;
+    }
+    .nav_podval{
+        font-size: 14px;
+    }
+    .podval{
+        margin: 0 50px;
+        margin-top: 30px;
+    }
+    .log_podval{
+        margin-left: 50px;
+    }
+    .soc{
+        margin: 0 50px;
+    }
+}
+
+/*------------    end mobile footer   -----------*/
+
+
+
+/*-------------        start vesti      -------------------------*/
+
+.aktualno{
+    background: #FFE3BA;
+    padding-left: 130px;
+    padding-bottom: 50px;
+    padding-right: 130px;
+}
+.Novosty{
+    margin: 0px;
+    font-size: 49px;
+    padding-top: 50px;
+}
+.novosty{
+    display: block;
+}
+.novay{
+    padding-top: 100px;
+}
+.novay1{
+    padding-top: 30px;
+}
+.zaglavie{
+    margin: 0px;
+    font-size: 35px;
+    padding: 0px;
+}
+.text{
+    font-size: 26px;
+}
+.zaglavie, .text{
+    padding-left: 380px;
+}
+.nov{
+    float: left;
+}
+.podrobnee{
+    font-size: 20px;
+    background-color: #FF9900;
+    padding: 15px 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.podrobnee:hover{
+    background-color: #ffda44;
+}
+.podrobnee:active{
+    background-color: #ffda44;
+    font-weight: bold;
+}
+
+/*-------------        end vesti      -------------------------*/
+
+/*-------------        start vesti_otkrtie      -------------------------*/
+
+.otkrytie_avtoshcool{
+    background: #FFE3BA;
+    padding-left: 130px;
+    padding-bottom: 50px;
+    padding-right: 130px;
+}
+.sonic{
+    font-weight: bold;
+    color: #000;
+}
+.open_avtoshool{
+    margin: 0px;
+    font-size: 39px;
+    padding-top: 50px;
+}
+.raz{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.text_avtoshool{
+    font-size: 26px;
+}
+.nov_house{
+    margin-top: 50px;
+    float: right;
+}
+.nov_house1{
+    margin-top: 10px;
+    padding-right: 15px;
+    float: left;
+}
+.nov_house2{
+    float: right;
+    margin-top: 10px;
+}
+
+/*-------------        end vesti_otkrtie      -------------------------*/
+
+
+/*-------------        start vesti_akcii      -------------------------*/
+
+.akciy_avtoshcool{
+    background: #FFE3BA;
+    padding-left: 130px;
+    padding-bottom: 50px;
+    padding-right: 130px;
+}
+.akciy_avtoshcool .start12{
+    margin: 0px;
+    font-size: 39px;
+    padding-top: 50px;
+}
+.akciy_avtoshcool h3{
+    margin: 0px;
+    font-size: 35px;
+    color: #000;
+    padding-top: 20px;
+}
+.text1_avtoshool{
+    font-size: 26px;
+    margin: 15px 0px;
+}
+.nov_house{
+    margin-top: 50px;
+    float: right;
+}
+.usloviy{
+    margin: 15px;
+    font-size: 20px;
+    color: #db6409;
+}
+.moment{
+    padding-top: 50px;
+    color: #a31e12;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.studak{
+    float: right;
+}
+.imeninik, .sertifikat{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+/*-------------        end vesti_akcii      -------------------------*/
